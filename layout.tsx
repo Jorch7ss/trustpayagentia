@@ -6,7 +6,7 @@ import "./globals.css";
 const syne = Syne({
   subsets: ["latin"],
   variable: "--font-syne",
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800"],
 });
 
 const dmMono = DM_Mono({
@@ -16,8 +16,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TrustPay Agent",
-  description: "Verificación de confianza para pagos con stablecoins en Arbitrum",
+  title: "TrustPay Agent — Verificación Inteligente de Pagos",
+  description: "Motor de riesgo con IA local para verificar pagos con stablecoins en Arbitrum.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
