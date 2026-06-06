@@ -1,0 +1,35 @@
+{
+  "name": "trustpay-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev":     "next dev",
+    "build":   "next build",
+    "vercel-build": "next build",
+    "start":   "next start",
+    "typecheck": "tsc --noEmit",
+    "demo":    "npx tsx engine/runDemo.ts",
+    "compile": "npx hardhat compile",
+    "deploy:testnet": "npx hardhat run scripts/deploy.ts --network arbitrumSepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.ts --network arbitrumOne"
+  },
+  "dependencies": {
+    "next":    "14.2.3",
+    "react":   "^18",
+    "react-dom": "^18",
+    "viem":    "^2.13.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node":    "^20",
+    "@types/react":   "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer":   "^10.0.1",
+    "dotenv":         "^16.4.5",
+    "hardhat":        "^2.22.4",
+    "postcss":        "^8",
+    "tailwindcss":    "^3.4.1",
+    "tsx":            "^4.11.0",
+    "typescript":     "^5"
+  }
+}
